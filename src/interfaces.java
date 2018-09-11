@@ -15,3 +15,15 @@ interface IWorkable {
 interface IFeedable {
     public void eat();
 }
+
+interface IEat {
+    public default void eat();
+}
+
+interface ISick {
+    public void sick();
+}
+
+interface IReboot {
+    public void reboot();
+}
