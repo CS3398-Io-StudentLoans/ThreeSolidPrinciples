@@ -5,22 +5,51 @@ import java.awt.event.*;  // Using AWT event classes and listener interfaces
 import java.io.*;
 
 
-class Worker implements IWorkable, IFeedable{
+class BaseWorker {
     public void work() {
-        // ....working
-    }
-
-    public void eat() {
-        //.... eating in launch break
+        System.out.println("I am working..")
     }
 }
 
-class SuperWorker implements IWorkable, IFeedable{
+
+class Worker extends BaseWorker implements IEat, ISick{
     public void work() {
-        //.... working much more
+        super();
     }
 
     public void eat() {
-        //.... eating in launch break
+        System.out.println("I am eating..")
+    }
+
+    public void sick() {
+        System.out.println("I am sick.")
+    }
+}
+
+class SuperWorker extends BaseWorker implements IEat, ISick{
+    public void work() {
+        System.out.println("I am working much more!")
+    }
+
+    public void eat() {
+        System.out.println("I am eating..")
+    }
+
+    public void sick() {
+        System.out.println("I am sick.")
+    }
+}
+
+class TempWorker extends BaseWorker implements IEat, ISick{
+    public void work() {
+        System.out.println("I am working part time.")
+    }
+
+    public void eat() {
+        System.out.println("I am eating..")
+    }
+
+    public void sick() {
+        System.out.println("I am sick.")
     }
 }
