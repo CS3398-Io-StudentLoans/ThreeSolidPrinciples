@@ -13,7 +13,7 @@
         <mkdir dir="build/jar"/>
         <jar destfile="build/jar/ThreeSolidMain.jar" basedir="build/classes">
             <manifest>
-                <attribute name="Main-Class" value="threesolid.ThreeSolidMain"/>
+                <attribute name="Main-Class" value="ThreeSolidPrinciples.ThreeSolidMain"/>
             </manifest>
         </jar>
     </target>
