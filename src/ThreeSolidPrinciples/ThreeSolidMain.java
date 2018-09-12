@@ -21,6 +21,8 @@ public class ThreeSolidMain
         try
         {
             System.out.format("Starting ... \n");
+            System.out.print("\n");
+            
             Worker worker = new Worker();
             SuperWorker sWorker = new SuperWorker();
             TempWorker tWorker = new TempWorker();
