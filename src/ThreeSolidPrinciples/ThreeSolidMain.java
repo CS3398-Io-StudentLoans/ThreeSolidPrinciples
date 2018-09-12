@@ -17,6 +17,10 @@ public class ThreeSolidMain
     
     public static void main(String[] args)
     {
+    	
+    	Manager tsManager = new Manager();
+        ProjectManager pjManager = new ProjectManager();
+        ProductManager pdManager = new ProductManager();
 
         try
         {
