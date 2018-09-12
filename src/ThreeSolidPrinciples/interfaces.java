@@ -8,16 +8,9 @@ import java.io.*;
 // The robot class will not implement the eat method.
 // This file also implies Single Responsibility Principle as it is only responsible for interfaces
 // this file doesn't apply to Open Class Principle
-interface IWorkable {
-    public void work();
-}
-
-interface IFeedable {
-    public void eat();
-}
 
 interface IEat {
-    public default void eat();
+    public void eat();
 }
 
 interface ISick {

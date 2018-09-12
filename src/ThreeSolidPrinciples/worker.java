@@ -7,49 +7,45 @@ import java.io.*;
 
 class BaseWorker {
     public void work() {
-        System.out.println("I am working..")
+        System.out.println("I am working..");
     }
 }
 
-
-class Worker extends BaseWorker implements IEat, ISick{
-    public void work() {
-        super();
-    }
+class Worker extends BaseWorker implements IEat, ISick {
 
     public void eat() {
-        System.out.println("I am eating..")
+        System.out.println("I am eating.");
     }
 
     public void sick() {
-        System.out.println("I am sick.")
+        System.out.println("I am sick.");
     }
 }
 
 class SuperWorker extends BaseWorker implements IEat, ISick{
     public void work() {
-        System.out.println("I am working much more!")
+        System.out.println("Super worker working much more!");
     }
 
     public void eat() {
-        System.out.println("I am eating..")
+        System.out.println("Super eating!");
     }
 
     public void sick() {
-        System.out.println("I am sick.")
+        System.out.println("I am super sick.");
     }
 }
 
 class TempWorker extends BaseWorker implements IEat, ISick{
     public void work() {
-        System.out.println("I am working part time.")
+        System.out.println("I am working part time.");
     }
 
     public void eat() {
-        System.out.println("I am eating..")
+        System.out.println("I am temporarily eating.");
     }
 
     public void sick() {
-        System.out.println("I am sick.")
+        System.out.println("I am temporarily sick.");
     }
 }

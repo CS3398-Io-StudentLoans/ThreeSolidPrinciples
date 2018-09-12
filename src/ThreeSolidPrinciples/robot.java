@@ -16,12 +16,8 @@ Interface segregation- does not apply
 ###
 Open close- Robot will be open to extentions and will not need to be modifided from within.
 */
-class Robot extends BaseWorker implements IReboot{
-    public void work() {
-        super();
-    }
-
-    public void reboot() {
-    	System.out.println("I am rebooting.")
+class Robot extends BaseWorker implements IReboot{	
+	public void reboot() {
+    	System.out.println("I am rebooting.");
     }
 }
