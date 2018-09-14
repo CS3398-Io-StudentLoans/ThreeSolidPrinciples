@@ -26,42 +26,42 @@ public class ThreeSolidMain
         {
             System.out.format("Starting ... \n");
             System.out.print("\n");
-            
-            Worker worker = new Worker();
-            SuperWorker sWorker = new SuperWorker();
-            TempWorker tWorker = new TempWorker();
-            Robot robot = new Robot();
-            
-            System.out.format("This is a normal worker: \n");
-            worker.work();
-            worker.eat();
-            System.out.format("\n");
-            
-            System.out.format("This is a super worker: \n");
-            sWorker.work();
-            sWorker.eat();
-            System.out.format("\n");
-            
-            System.out.format("This is a temp worker: \n");
-            tWorker.work();
-            tWorker.eat();
-            System.out.format("\n");
-            
-            System.out.format("This is a robot: \n");
-            robot.work();
-            robot.reboot();
-            System.out.format("\n");
-            
-            tsManager.setWorker(worker);
-            tsManager.manage();
-            
-            pdManager.defineProduct();
-            pjManager.scheduleWork(robot);
         }
         catch (Exception main_except)
         {
             main_except.printStackTrace();
         }
+        
+        Worker worker = new Worker();
+        SuperWorker sWorker = new SuperWorker();
+        TempWorker tWorker = new TempWorker();
+        Robot robot = new Robot();
+        
+        System.out.format("This is a normal worker: \n");
+        worker.work();
+        worker.eat();
+        System.out.format("\n");
+        
+        System.out.format("This is a super worker: \n");
+        sWorker.work();
+        sWorker.eat();
+        System.out.format("\n");
+        
+        System.out.format("This is a temp worker: \n");
+        tWorker.work();
+        tWorker.eat();
+        System.out.format("\n");
+        
+        System.out.format("This is a robot: \n");
+        robot.work();
+        robot.reboot();
+        System.out.format("\n");
+        
+        tsManager.setWorker(worker);
+        tsManager.manage();
+        
+        pdManager.defineProduct();
+        pjManager.scheduleWork(robot);
 
         try
         {
