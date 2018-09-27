@@ -24,13 +24,15 @@
 
    <target name="main" depends="clean,run"/>
    <target name="clean-build" depends="clean,jar"/>
-
-</project>
-
-<target name="doall">
+   
+   <target name="doall">
      <echo message="Running all targets in succession: clean, compile, jar, run."/>
      <antcall target="clean"/>
      <antcall target="compile"/>
      <antcall target="jar"/>
      <antcall target="run"/>
-</target>
+   </target>
+
+</project>
+
+
