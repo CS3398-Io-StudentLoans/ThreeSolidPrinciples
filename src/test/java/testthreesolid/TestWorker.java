@@ -13,5 +13,5 @@ public class TestWorker {
    
 public void testWorkMethod() {
 
-   assertEquals(w.work(),"I'm working already!",”Mismatch between test text and method text”);
+   assertEquals(w.work(),"This is a normal worker: \n",”Mismatch between test text and method text”);
 }
