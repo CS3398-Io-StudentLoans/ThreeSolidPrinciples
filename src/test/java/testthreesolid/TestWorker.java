@@ -11,7 +11,8 @@ public class TestWorker {
    @Test
    @DisplayName("Work Method Test")
    
-public void testWorkMethod() {
+	public void testWorkMethod() {
+   assertEquals(w.work(),"This is a normal worker: \n","Mismatch between test text and method text");
 
-   assertEquals(w.work(),"This is a normal worker: \n",”Mismatch between test text and method text”);
+	}
 }
