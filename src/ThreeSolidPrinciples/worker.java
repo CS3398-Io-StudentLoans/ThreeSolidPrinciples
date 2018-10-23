@@ -6,8 +6,8 @@ import java.io.*;
 
 
 class BaseWorker {
-    public void work() {
-        System.out.println("I am working..");
+    public String work() {
+        return "I am working..";
     }
 }
 
@@ -23,8 +23,8 @@ class Worker extends BaseWorker implements IEat, ISick {
 }
 
 class SuperWorker extends BaseWorker implements IEat, ISick{
-    public void work() {
-        System.out.println("Super worker working much more!");
+    public String work() {
+        return "Super worker working much more!";
     }
 
     public void eat() {
@@ -37,8 +37,8 @@ class SuperWorker extends BaseWorker implements IEat, ISick{
 }
 
 class TempWorker extends BaseWorker implements IEat, ISick{
-    public void work() {
-        System.out.println("I am working part time.");
+    public String work() {
+        return "I am working part time.";
     }
 
     public void eat() {
