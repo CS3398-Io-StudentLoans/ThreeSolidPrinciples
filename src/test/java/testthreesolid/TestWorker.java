@@ -26,5 +26,8 @@ public class TestWorker {
 
 	}
 	
-	
+	@Test
+	@DisplayName("I'm a Failure")
+	static void fail() {
+	}
 }
