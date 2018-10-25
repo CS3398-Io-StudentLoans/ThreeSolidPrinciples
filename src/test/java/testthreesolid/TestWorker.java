@@ -25,6 +25,7 @@ public class TestWorker {
    		assertEquals(w.work(),"I am working..","Mismatch between test text and method text");
 
 	}
+<<<<<<< HEAD
 	
 	@Test
 	@DisplayName("I'm a Failure")
@@ -33,4 +34,11 @@ public class TestWorker {
 	
 	
 	
+=======
+	@Test
+	@DisplayName("Fail Method Test")
+	public void testFail(){
+		assertEquals(w.work(), "this is failing", "showing a fail test method");
+	}
+>>>>>>> parent of 3c662fb... fixed Jays error :)
 }
