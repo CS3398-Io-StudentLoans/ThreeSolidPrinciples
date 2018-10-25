@@ -25,6 +25,8 @@ public class TestWorker {
    		assertEquals(w.work(),"I am working..","Mismatch between test text and method text");
 
 	}
+	@Test
+	@DisplayName("Fail Method Test")
 	public void testFail(){
 		assertEquals(w.work(), "this is failing", "showing a fail test method");
 	}
