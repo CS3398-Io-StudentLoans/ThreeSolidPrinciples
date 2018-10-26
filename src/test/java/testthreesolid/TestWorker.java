@@ -16,15 +16,15 @@ public class TestWorker {
 	}
    	
    	@Test
-   	@DisplayName("Pass work Method Test with assertTrue")
-	public void testPass() {
+   	@DisplayName("newtest<MT>WorkerPass")
+	public void WorkerPass() {
    		assertTrue(w.work() == "I am working..", "This test pssses with assertTrue");
 	}
 	
 	
 	@Test
-	@DisplayName("Fail work Method Test with assertNull")
-	public void testFail(){
+	@DisplayName("newtest<MT>WorkerFail")
+	public void WorkerFail(){
 		assertNull(w.work(), "This test fails with assertNull");
 	}
 }
