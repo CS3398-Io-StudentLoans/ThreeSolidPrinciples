@@ -10,11 +10,11 @@ import java.io.*;
 // this file doesn't apply to Open Class Principle
 
 interface IEat {
-    public void eat();
+    public boolean eat();
 }
 
 interface ISick {
-    public void sick();
+    public boolean sick();
 }
 
 interface IReboot {

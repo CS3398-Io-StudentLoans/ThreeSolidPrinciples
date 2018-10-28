@@ -13,12 +13,12 @@ class BaseWorker {
 
 class Worker extends BaseWorker implements IEat, ISick {
 
-    public void eat() {
-        System.out.println("I am eating.");
+    public boolean eat() {
+        return true;
     }
 
-    public void sick() {
-        System.out.println("I am sick.");
+    public boolean sick() {
+        return true;
     }
 }
 
@@ -27,12 +27,12 @@ class SuperWorker extends BaseWorker implements IEat, ISick{
         return "Super worker working much more!";
     }
 
-    public void eat() {
-        System.out.println("Super eating!");
+    public boolean eat() {
+        return true;
     }
 
-    public void sick() {
-        System.out.println("I am super sick.");
+    public boolean sick() {
+        return false;
     }
 }
 
@@ -41,11 +41,11 @@ class TempWorker extends BaseWorker implements IEat, ISick{
         return "I am working part time.";
     }
 
-    public void eat() {
-        System.out.println("I am temporarily eating.");
+    public boolean eat() {
+    	return false;
     }
 
-    public void sick() {
-        System.out.println("I am temporarily sick.");
+    public boolean sick() {
+        return true;
     }
 }
