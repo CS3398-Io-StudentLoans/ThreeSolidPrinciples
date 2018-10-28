@@ -9,16 +9,6 @@ public class TestWorker {
 
    	private Worker w = new Worker();
 
-   	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-
-	public void setUpStreams() {
-	    System.setOut(new PrintStream(outContent));
-	}
-
-	public void cleanUpStreams() {
-	    System.setOut(null);
-	}
-
    	@Test
    	@DisplayName("Work Method Test")
 	public void testWorkMethod() {
@@ -28,8 +18,17 @@ public class TestWorker {
 	
 	
 	@Test
-	@DisplayName("Fail Method Test")
-	public void testFail(){
+	@DisplayName("Pass Method Test")
+	public void newtestRMWorkerPassl(){
 		assertEquals(w.work(), "this is failing", "showing a fail test method");
 	}
+	
+	
+	@Test
+	@DisplayName("Fail Method Test")
+	public void newtestRMWorkerFail(){
+		assertEquals(w.work(), "this is failing", "showing a fail test method");
+	}
+	
+	
 }
