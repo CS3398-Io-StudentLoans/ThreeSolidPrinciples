@@ -34,8 +34,8 @@ public class TestWorker {
 	}
 
 	@Test
-	@DisplayName("Fail Method Test")
-	public void testFail(){
+	@DisplayName("newtest<DLe>WorkerFail()")
+	public void testDLeFail(){
 		assertTrue(w.work() == "string", "Test fails");
 	}
 }
