@@ -18,7 +18,7 @@ public class TestWorker {
    	@Test
    	@DisplayName("newtest<BChamblee>WorkerPass")
 	public void WorkerPass() {
-   		 assertNotNull(w.work() == "I am working..", "This test pssses with assertTrue");
+   		 assertNotNull(w.work() == "I am working..", "This test pssses with assertNotNull");
 	}
 	
 	
