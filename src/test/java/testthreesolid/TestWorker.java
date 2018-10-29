@@ -29,7 +29,7 @@ public class TestWorker {
 	
 	@Test
 	@DispayName("Pass Method Test")
-	public void newtestjmWorkerPass().(){
+	public void newtestjmWorkerPass(){
 		assertTrue(w.work(), "this test is passing");
 	}
 }
