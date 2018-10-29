@@ -20,4 +20,8 @@ class Robot extends BaseWorker implements IReboot{
 	public void reboot() {
     	System.out.println("I am rebooting.");
     }
+	public boolean outOfOil(){
+		System.out.println("I am out of oil, I'm Thirsty");
+		return true;
+	}
 }
