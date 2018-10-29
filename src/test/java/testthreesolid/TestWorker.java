@@ -28,8 +28,8 @@ public class TestWorker {
 	
 	
 	@Test
-	@DisplayName("Fail Method Test")
-	public void testFail(){
-		assertEquals(w.work(), "this is failing", "showing a fail test method");
+	@DispayName("Pass Method Test")
+	public void newtestjmWorkerPass().(){
+		assertTrue(w.work(), "this test is passing");
 	}
 }
