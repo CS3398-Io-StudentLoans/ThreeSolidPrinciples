@@ -8,6 +8,7 @@ import java.io.*;
 public class TestWorker {
 
    	private Worker w = new Worker();
+	private Robot r = new Robot();
 
    	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
@@ -28,8 +29,14 @@ public class TestWorker {
 	
 	
 	@Test
-	@DispayName("Pass Method Test")
+	@DisplayName("Pass Method Test")
 	public void newtestjmWorkerPass(){
-		assertTrue(w.work(), "this test is passing");
+		assertTrue(r.outOfOil()); //this test passes because r.outOfOil is set to true
+	}
+	
+	@Test
+	@DisplayName("fail Method Test")
+	public void newtestjmWorkerFail(){
+		assertNull(r); //this test fails because r is not a null object
 	}
 }
