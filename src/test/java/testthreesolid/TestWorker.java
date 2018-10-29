@@ -9,27 +9,22 @@ public class TestWorker {
 
    	private Worker w = new Worker();
 
-   	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-
-	public void setUpStreams() {
-	    System.setOut(new PrintStream(outContent));
-	}
-
-	public void cleanUpStreams() {
-	    System.setOut(null);
-	}
-
    	@Test
    	@DisplayName("Work Method Test")
 	public void testWorkMethod() {
    		assertEquals(w.work(),"I am working..","Mismatch between test text and method text");
-
+	}
+   	
+   	@Test
+   	@DisplayName("newtest<BChamblee>WorkerPass")
+	public void WorkerPass() {
+   		 assertNotNull(w.work() == "I am working..", "This test pssses with assertTrue");
 	}
 	
 	
 	@Test
-	@DisplayName("Fail Method Test")
-	public void testFail(){
-		assertEquals(w.work(), "this is failing", "showing a fail test method");
+	@DisplayName("newtest<BChamblee>WorkerFail")
+	public void WorkerFail(){
+		 	assertFalse( "This test fails with assertFalse", w.work() == "I am working..");
 	}
 }
